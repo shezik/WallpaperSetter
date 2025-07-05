@@ -41,6 +41,7 @@
 
         <activity
             android:name=".SetDeXDesktopWallpaperActivity"
+            android:enabled="@bool/enable_samsung_dex_capabilities"
             android:exported="true"
             android:label="@string/set_as_dex_desktop_wallpaper"
             android:theme="@style/Theme.WallpaperSetter.TransparentActivity"
@@ -54,6 +55,7 @@
 
         <activity
             android:name=".SetDeXLockscreenWallpaperActivity"
+            android:enabled="@bool/enable_samsung_dex_capabilities"
             android:exported="true"
             android:label="@string/set_as_dex_lockscreen_wallpaper"
             android:theme="@style/Theme.WallpaperSetter.TransparentActivity"

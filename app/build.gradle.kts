@@ -26,6 +26,24 @@ android {
             )
         }
     }
+
+    flavorDimensions += "TargetDevice"
+
+    productFlavors {
+        create("SamsungDeX") {
+            dimension = "TargetDevice"
+            applicationIdSuffix = ".SamsungDeX"
+            versionNameSuffix = "-SamsungDeX"
+            resValue("bool", "enable_samsung_dex_capabilities", "true")
+        }
+
+        create("standard") {
+            dimension = "TargetDevice"
+            applicationIdSuffix = ".standard"
+            versionNameSuffix = "-standard"
+        }
+    }
+
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_11
         targetCompatibility = JavaVersion.VERSION_11
