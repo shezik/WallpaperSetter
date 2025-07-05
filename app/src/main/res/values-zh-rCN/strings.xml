@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">设定为壁纸</string>
+    <string name="set_as_desktop_wallpaper">设定为桌面壁纸</string>
+    <string name="set_as_lockscreen_wallpaper">设定为锁屏壁纸</string>
+    <string name="image_set_as_desktop_wallpaper">已设定为桌面壁纸。</string>
+    <string name="image_set_as_lockscreen_wallpaper">已设定为锁屏壁纸。</string>
+    <string name="failed_to_set_wallpaper">设定壁纸失败：%1$s</string>
+    <string name="permission_denied_to_set_wallpaper">无设定壁纸权限：%1$s</string>
+    <string name="no_uri_found_in_intent">Intent 中缺少 URI。</string>
+    <string name="unsupported_mime_type">不支持的 MIME 类型：%1$s</string>
+</resources>

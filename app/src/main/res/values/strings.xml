@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Set as Wallpaper</string>
+    <string name="set_as_desktop_wallpaper">Set as Desktop Wallpaper</string>
+    <string name="set_as_lockscreen_wallpaper">Set as Lockscreen Wallpaper</string>
+    <string name="image_set_as_desktop_wallpaper">Image set as desktop wallpaper.</string>
+    <string name="image_set_as_lockscreen_wallpaper">Image set as lockscreen wallpaper.</string>
+    <string name="failed_to_set_wallpaper">Failed to set wallpaper: %1$s</string>
+    <string name="permission_denied_to_set_wallpaper">Permission denied to set wallpaper: %1$s</string>
+    <string name="no_uri_found_in_intent">No URI found in Intent.</string>
+    <string name="unsupported_mime_type">Unsupported MIME type: %1$s</string>
+</resources>
