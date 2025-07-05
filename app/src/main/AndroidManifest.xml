@@ -39,6 +39,32 @@
             </intent-filter>
         </activity>
 
+        <activity
+            android:name=".SetDeXDesktopWallpaperActivity"
+            android:exported="true"
+            android:label="@string/set_as_dex_desktop_wallpaper"
+            android:theme="@style/Theme.WallpaperSetter.TransparentActivity"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="image/*" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".SetDeXLockscreenWallpaperActivity"
+            android:exported="true"
+            android:label="@string/set_as_dex_lockscreen_wallpaper"
+            android:theme="@style/Theme.WallpaperSetter.TransparentActivity"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="image/*" />
+            </intent-filter>
+        </activity>
+
     </application>
 
 </manifest>

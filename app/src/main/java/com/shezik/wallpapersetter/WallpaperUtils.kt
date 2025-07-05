@@ -9,6 +9,8 @@ import android.widget.Toast
 class WallpaperUtils {
 
     companion object {
+        var FLAG_DEX = 8
+
         fun handleSharedImage(context: Context, intent: Intent, wallpaperFlag: Int) {
             if (intent.action != Intent.ACTION_SEND)
                 return
@@ -21,9 +23,18 @@ class WallpaperUtils {
                         val wallpaperManager = WallpaperManager.getInstance(context)
                         wallpaperManager.setStream(inputStream, null, true, wallpaperFlag)
 
-                        Toast.makeText(context, if (wallpaperFlag == WallpaperManager.FLAG_SYSTEM)
-                            context.getString(R.string.image_set_as_desktop_wallpaper)
-                            else context.getString(R.string.image_set_as_lockscreen_wallpaper), Toast.LENGTH_SHORT).show()
+                        Toast.makeText(context,
+                            if (wallpaperFlag and FLAG_DEX == FLAG_DEX)
+                                if (wallpaperFlag and WallpaperManager.FLAG_SYSTEM == WallpaperManager.FLAG_SYSTEM)
+                                    context.getString(R.string.image_set_as_dex_desktop_wallpaper)
+                                else
+                                    context.getString(R.string.image_set_as_dex_lockscreen_wallpaper)
+                            else
+                                if (wallpaperFlag and WallpaperManager.FLAG_SYSTEM == WallpaperManager.FLAG_SYSTEM)
+                                    context.getString(R.string.image_set_as_desktop_wallpaper)
+                                else
+                                    context.getString(R.string.image_set_as_lockscreen_wallpaper)
+                        , Toast.LENGTH_SHORT).show()
 
                     } catch (e: java.io.IOException) {
                         e.printStackTrace()

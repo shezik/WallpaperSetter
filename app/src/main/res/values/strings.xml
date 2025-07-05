@@ -8,4 +8,8 @@
     <string name="permission_denied_to_set_wallpaper">Permission denied to set wallpaper: %1$s</string>
     <string name="no_uri_found_in_intent">No URI found in Intent.</string>
     <string name="unsupported_mime_type">Unsupported MIME type: %1$s</string>
+    <string name="set_as_dex_desktop_wallpaper">Set as DeX Desktop Wallpaper</string>
+    <string name="set_as_dex_lockscreen_wallpaper">Set as DeX Lockscreen Wallpaper</string>
+    <string name="image_set_as_dex_desktop_wallpaper">Image set as DeX desktop wallpaper.</string>
+    <string name="image_set_as_dex_lockscreen_wallpaper">Image set as DeX lockscreen wallpaper.</string>
 </resources>
